@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<% content_for :content do %>
+</br>
+	<div class="container text-center">
+	  <h1 class="display-1 mt-5">Section</h1>
+	  <p class="lead mb-5">All this sections (activities) define the Life Balance Wheel </p>
+	</div>
+<% end %>
+
+<%= render template: "layouts/application" %>
+
+<h1>Sections (Activities)</h1>
+
+<table class="container">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Score</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @activities.each do |activity| %>
+      <tr>
+        <td><%= activity.name %></td>
+        <td><%= activity.score %></td>
+        <td><%= link_to 'Show', activity %></td>
+        <td><%= link_to 'Edit', edit_activity_path(activity) %></td>
+        <td><%= link_to 'Destroy', activity, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Activity', new_activity_path %>

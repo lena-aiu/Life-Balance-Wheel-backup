@@ -1,8 +1,16 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Users</h1>
+<% content_for :content do %>
+</br>
+	<div class="container text-center">
+	  <h1 class="display-1 mt-5">Users - Participants</h1>
+	  <p class="lead mb-5">Contact Information of Participants</p>
+	</div>
+<% end %>
 
-<table>
+<%= render template: "layouts/application" %>
+
+<table class="container">
   <thead>
     <tr>
       <th>First name</th>

@@ -14,7 +14,7 @@ Ruby on Rails 5 Basics, Rails Routes and Resources, and Active Record Associatio
 Idea *
 
 The goal of this project is to bring more clarity to human life and provide helpful materials that 
-will fill gaps in important areas of human life. Such as family and friends, finances, finances, 
+will fill gaps in important areas of human life. Such as family and friends, finances, career/business, 
 intimate relationships, health/sefl-care, spiritual growing, personal development and physical environment.
 
 On this blog application you'll see:
@@ -37,7 +37,7 @@ My improving plan for this project is call the API using AJAX, from a front end 
 
 PS: After you clone repository, be sure to run bundle install before you try to bring up the code.
 
-[Website](https://lena-aiu.github.io/"It's work!")
+[Website] (https://lena-aiu.github.io/" It's work!")
 
 @lena-aiu :+1: This  looks great - it's ready to review! :hibiscus:
 
