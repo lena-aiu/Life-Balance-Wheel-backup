@@ -1,14 +1,53 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Name:</strong>
-  <%= @activity.name %>
-</p>
 
-<p>
-  <strong>Score:</strong>
-  <%= @activity.score %>
-</p>
 
-<%= link_to 'Edit', edit_activity_path(@activity) %> |
-<%= link_to 'Back', activities_path %>
+<% content_for :content do %>
+</br>
+	<div class="container text-center">
+	  <h1 class="display-1 mt-5">Create the Balance</h1>
+      <img class="mb-4 img-fluid rounded mx-auto d-none d-sm-block" src="/assets/balance.jpg" alt="balance">
+	  <p class="lead mb-5">This exercise will brighten your daily life!</p>
+	</div>
+
+<% end %>
+
+<%= render template: "layouts/application" %>
+
+<table>
+  <tr>
+    <th></th>
+    <th></th> 
+  </tr>
+  <tr>
+    <td>
+		<p>
+		  <strong class="lead mb-5">Name:</strong>
+		 <strong class="font-italic display-4"><%= @activity.name %></strong>
+		</p>
+
+		<p>
+		  <strong class="lead mb-5">Trainer(Score):</strong>
+		 <strong class="font-italic display-4"><%= @activity.score %></strong>
+		</p>
+		<img class="mb-4 img-fluid rounded mx-auto d-none d-sm-block" src="/assets/wheel.jpg" alt="wheel">
+	</td>
+	<td>
+		<div id="exercises">
+			<% if @activity.exercises.present? %>
+				<h1>Exercises</h1>
+			<% end %>
+			
+			<%= render @activity.exercises %>
+			<h2>Add an exercise</h2>
+			<%= render partial: "exercises/form", locals: {exercise: @activity.exercises.new} %>
+		</div>
+		</br>
+
+		<%= link_to 'Edit', edit_activity_path(@activity) %> |
+		<%= link_to 'Back', activities_path %>
+	</td>
+  </tr>
+
+</table>
+

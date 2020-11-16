@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
-  resources :activities
-  
+  resources :activities do
+	resources :exercises
+    end
   get 'home/index'
   resources :users
 

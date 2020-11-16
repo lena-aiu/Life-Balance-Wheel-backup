@@ -1,0 +1,11 @@
+ <div>
+  <strong><%= exercise.name %>:</strong>
+  <%= exercise.content %>
+  </br>
+  <div class="exercise-admin">
+	</br>
+	<%= link_to "Edit", edit_activity_exercise_path(@activity, exercise) %>
+	<%= link_to "Delete", [@activity, exercise], method: :delete %>
+  </div>
+  </br>
+ </div>
