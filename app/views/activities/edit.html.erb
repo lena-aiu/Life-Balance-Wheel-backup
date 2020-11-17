@@ -1,17 +1,17 @@
 <% content_for :content do %>
-</br>
 	<div class="container text-center">
 	  <h1 class="display-1 mt-5">Activities</h1>
 	  <img class="mb-4 img-fluid rounded mx-auto d-none d-sm-block" src="/assets/balance.jpg" alt="balance">
 	  <p class="lead mb-5">All this sections (activities) define the Life Balance Wheel </p>
 	</div>
+
+	<h1>Editing Activity</h1>
+
+	<%= render 'form', activity: @activity %>
+
+	<%= link_to 'Show', @activity %> |
+	<%= link_to 'Back', activities_path %>
+
 <% end %>
 
 <%= render template: "layouts/application" %>
-
-<h1>Editing Activity</h1>
-
-<%= render 'form', activity: @activity %>
-
-<%= link_to 'Show', @activity %> |
-<%= link_to 'Back', activities_path %>

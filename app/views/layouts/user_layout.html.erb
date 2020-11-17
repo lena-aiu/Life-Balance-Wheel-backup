@@ -7,17 +7,10 @@
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
 
-	
   </head>
-
   <body>
     <%= yield %>
-	
-	<footer>
-		<p><small>&copy; 2020 Life Balance Conf &amp; Elena Aiupova</small></p>
-	</footer>
   </body>
   <% if !flash[:alert].nil? %>
-    <p class="my_alert"><%= flash[:alert] %></p>
   <% end %>
 </html>

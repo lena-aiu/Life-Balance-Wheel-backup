@@ -2,17 +2,9 @@
 <html>
   <head>
     <title>Participation</title>
-
   </head>
-
   <body>
-  
-    <%= yield %>
-	
-	<footer>
-		<p><small>&copy; 2020 Life Balance Conf &amp; Elena Aiupova</small></p>
-	</footer>
-	
+    <%= yield %>	
   </body>
   <% if !flash[:alert].nil? %>
     <p class="my_alert"><%= flash[:alert] %></p>
