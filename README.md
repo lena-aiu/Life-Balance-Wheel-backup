@@ -37,7 +37,7 @@ My improving plan for this project:
 
 PS: After you clone repository, be sure to run bundle install before you try to bring up the code.
 
-(https://lena-aiu.github.io/" It's work!")
+[Website](https://lena-aiu.github.io/ "It's work!")
 
 @lena-aiu :+1: This looks great - it's ready to review! :hibiscus:
 
