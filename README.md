@@ -33,7 +33,7 @@ My improving plan for this project:
 
 * Call the API using AJAX, from a front end application. 
 * Create models for Registration, Sing in, Sing Up.
-* Fix issues (dropdown filed, navigation, alerts on destroy method on Activity Controller, Validation for Exercises, background image on jumbotron).
+* Fix issues (dropdown filed, navigation, alerts hidden by navigation on destroy method on Controllers, Validation for Exercises, background image on jumbotron).
 
 PS: After you clone repository, be sure to run bundle install before you try to bring up the code.
 
