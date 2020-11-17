@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+	</br>
+	<div class="container text-center">
+	  <h1 class="display-1 mt-5">Participations</h1>
+	  <img class="mb-4 img-fluid rounded mx-auto d-none d-sm-block" src="/assets/participation.jpg" alt="participation">
+	  <p class="lead mb-5">Here you will se the list of Users and their selected Activities</p>
+	</div>
+
+<h1>New Participation</h1>
+
+<p>
+  <strong>User ID:</strong>
+  <%= @participation.user_id %>
+</p>
+
+<p>
+  <strong>Activity ID:</strong>
+  <%= @participation.activity_id %>
+</p>
+
+<p>
+  <strong>Value:</strong>
+  <%= @participation.value %>
+</p>
+
+
+<%= link_to 'Edit', edit_participation_path(@participation) %> |
+<%= link_to 'Back', participations_path %>
+

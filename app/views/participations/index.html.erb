@@ -1,0 +1,42 @@
+<p id="notice"><%= notice %></p>
+
+</br>
+	<div class="container text-center">
+	  <h1 class="display-1 mt-5">Participations</h1>
+	  <img class="mb-4 img-fluid rounded mx-auto d-none d-sm-block" src="/assets/participation.jpg" alt="participation">
+	  <p class="lead mb-5">Here you will se the list of Users and their selected Activities</p>
+	</div>
+	
+<h1>Participations</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>User_id</th>	  
+	  <th>Activity_id</th>
+	  <th>Value</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @participations.each do |participation| %>
+      <tr>
+        <td><%= participation.user_id %></td>
+		<td><%= participation.activity_id %></td> 
+		<td><%= participation.value %></td>
+        <td><%= link_to 'Show', participation %></td>
+        <td><%= link_to 'Edit', edit_participation_path(participation) %></td>
+        <td><%= link_to 'Destroy', participation, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New participation', new_participation_path %>
+<br>
+<%= link_to 'Users Page', users_path %>
+<br>
+<%= link_to 'Activities Page', activities_path %>

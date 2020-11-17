@@ -21,25 +21,25 @@ On this blog application you'll see:
 
 Data Models *
 
-- Three models: Activities (correlated to the each segment in Life Balance Wheel) , Users (registered to attended or choose the activities), and Comments (wrote by users for the each segment in Life Balance Wheel).
-- The one-to-many associations  between Activities and Comments, and many-to-many assassinations between Activities and Users.
-- Validation of attributes for Users information.
-- CRUD operations for models in controllers 
-- Views for index, new, edit, and show pages
-- Forms controls, links, css and Bootstrap controls, images, colors, fonts
+- Four models: Users (registered to attended or choose the activities), Activities (correlated to the each section in Life Balance Wheel), and Exercises (wrote for the Activity in Life Balance Wheel).
+- The one-to-many associations  between Users and Activities, and many-to-many associations between Activities and Exersises, has-many-through association between Users and Activities through Participation.
+- Validation of attributes for Users, Activities, Exercises information.
+- CRUD operations for models in controllers.
+- Views for index, new, edit, and show pages.
+- Forms controls, links, css and Bootstrap controls, images, colors, fonts.
 - Rspec for testing some of CRUD operations
 
 Also:
 
 * Links;
 
-My improving plan for this project is call the API using AJAX, from a front end application.
+My improving plan for this project is call the API using AJAX, from a front end application. And fix issues.
 
 PS: After you clone repository, be sure to run bundle install before you try to bring up the code.
 
-[Website] (https://lena-aiu.github.io/" It's work!")
+[Website](https://lena-aiu.github.io/" It's work!")
 
-@lena-aiu :+1: This  looks great - it's ready to review! :hibiscus:
+@lena-aiu :+1: This looks great - it's ready to review! :hibiscus:
 
 
 
