@@ -1,6 +1,7 @@
 class UsersController < ApplicationController
   rescue_from ActiveRecord::RecordNotFound, with: :catch_not_found 
   before_action :set_user, only: [:show, :edit, :update, :destroy]
+  http_basic_authenticate_with name: "elena", password: "balance", only: :show
   layout 'user_layout'
 
   # GET /users

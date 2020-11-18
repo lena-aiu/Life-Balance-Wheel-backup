@@ -1,5 +1,6 @@
 class ExercisesController < ApplicationController
 	before_action :set_activity 
+	http_basic_authenticate_with name: "elena", password: "balance", only: :destroy
 
 	def create
 		@exercise = @activity.exercises.create(exercise_params)

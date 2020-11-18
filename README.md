@@ -29,15 +29,19 @@ Data Models *
 - Forms controls, links, css and Bootstrap controls, images, colors, fonts.
 - Rspec for testing some of CRUD operations
 
+Also:
+
+* Security - basic authentification.
+
 My improving plan for this project:
 
 * Call the API using AJAX, from a front end application. 
-* Create models for Registration, Sing in, Sing Up).
-* Fix issues (dropdown filed, navigation, destroy method on Activity Controller, Validation for Exercises, background image on jumbotron).
+* Create models for Registration, Sing in, Sing Up.
+* Fix issues (dropdown filed, navigation, alerts hidden by navigation on destroy method on Controllers, Validation for Exercises, background image on jumbotron).
 
 PS: After you clone repository, be sure to run bundle install before you try to bring up the code.
 
-[Website](https://lena-aiu.github.io/" It's work!")
+[Website](https://lena-aiu.github.io/ "It's work!")
 
 @lena-aiu :+1: This looks great - it's ready to review! :hibiscus:
 
