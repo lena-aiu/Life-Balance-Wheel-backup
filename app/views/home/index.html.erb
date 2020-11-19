@@ -1,0 +1,407 @@
+<p id="notice"><%= notice %></p>
+
+<% content_for :content do %>
+
+<!-- jumbotron -->
+  <div class="jumbotron text-center jumbotron-fluid btn-ligh background-image: image-url('balance.png')">
+    <h1 class="display-3 mt-5">Want to Learn About Life Balance?</h1>
+	<p class="lead mb-5">A One-day Conference About Life Balance!</p>
+	
+	<div class="btn-group mt-4" role="group" aria-label="Callout buttons">
+	  <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#register">Register Now</button>
+	  <a class="btn btn-light btn-lg" href="#speakers">See Speakers</a>
+	  <a class="btn btn-light btn-lg" href="#about">About</a>
+	  <a class="btn btn-light btn-lg" href="#schedule">Schedule</a>
+	  <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#sing_in">Sign in</button>
+	</div>
+	
+  </div>
+<!-- jumbotron -->
+
+    <div class="container text-center">
+      <h1 class="display-1 mt-5">Life Balance Conf</h1>
+      <p class="lead mb-5">Coming Soon, a One-day Conference About Life Balance!</p>
+
+      <div class="col-lg-6 mx-auto">
+        <div class="input-group mb-3">
+          <input type="text" class="form-control" placeholder="Email" aria-label="Email" aria-describedby="basic-addon2">
+          <div class="input-group-append">
+            <button class="btn btn-primary" type="button" data-toggle="modal"  data-target="#sign_up">Sign up</button>
+          </div>
+        </div>	
+      </div>
+	  
+    </div>
+<br>
+
+
+    <!--=====================================
+     FORM MODAL   SING IN
+    =====================================-->
+
+<!-- Modal -->
+    <div class="modal fade" id="sing_in" tabindex="-1" role="dialog" aria-labelledby="sing in form" aria-hidden="true">
+    <!--  <div class="modal-dialog modal-lg" role="document"> -->
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header bg-info text-white">
+            <h5 class="modal-title" id="exampleModalLabel">Register for Life Balance Conf</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+	  
+			<form>
+				<div class="form-group">
+					<label for="inputEmail">Email</label>
+					<input type="email" class="form-control" id="inputEmail" placeholder="Email">
+				</div>
+				<div class="form-group">
+					<label for="inputPassword">Password</label>
+					<input type="password" class="form-control" id="inputPassword" placeholder="Password">
+				</div>
+				<div class="form-group">
+					<label class="form-check-label"><input type="checkbox"> Remember me</label>
+				</div>
+				<button type="submit" class="btn btn-primary">Sign in</button>
+			</form>	
+			
+          </div>
+        </div>
+      </div>
+    </div>
+	
+    <!--=====================================
+     FORM MODAL
+    =====================================-->
+
+    <!-- Modal -->
+    <div class="modal fade" id="register" tabindex="-1" role="dialog" aria-labelledby="register form" aria-hidden="true">
+    <!--  <div class="modal-dialog modal-lg" role="document"> -->
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header bg-info text-white">
+            <h5 class="modal-title" id="exampleModalLabel">Register for Life Balance Conf</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <!-- registration form -->
+            <form>
+              <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                <strong>Hurry!</strong> Early bird registration ends in two days.
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+
+              <h5 class="mb-4">Basic Info</h5>
+              <div class="form-group">
+                <label for="form-control-label" for="name">Name:</label>
+                <input type="text" class="form-control" id="name">
+              </div>
+              <div class="form-group">
+                <label for="form-control-label" for="email">Email:</label>
+                <input type="email" class="form-control" id="email">
+              </div>
+              <div class="form-group">
+                <label for="role">Job Role:</label>
+                <select class="custom-select form-control" id="role">
+                  <option value="project manager">Project Manager</option>
+                  <option value="business analyst">Business Analyst</option>
+                  <option value="back end developer">Back End Developer</option>
+                  <option value="student">Student</option> 
+                </select> 
+              </div>
+
+              <hr class="my-4">
+              <h5 class="mb-4">Whitch Topics Interest You Most?</h5>
+
+              <div class="form-check">
+                <label class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input">
+                  <span class="custom-control-indicator"></span>
+                  <span class="custom-control-description">Family and Friends</span>
+                </label>
+              </div>
+
+              <div class="form-check">
+                <label class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input">
+                  <span class="custom-control-indicator"></span>
+                  <span class="custom-control-description">Finances</span>
+                </label>
+              </div>
+
+              <div class="form-check">
+                <label class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input">
+                  <span class="custom-control-indicator"></span>
+                  <span class="custom-control-description">Career/Business</span>
+                </label>
+              </div>
+
+              <div class="form-check">
+                <label class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input">
+                  <span class="custom-control-indicator"></span>
+                  <span class="custom-control-description">Intimate Relationships</span>
+                </label>
+              </div>
+
+              <div class="form-check">
+                <label class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input">
+                  <span class="custom-control-indicator"></span>
+                  <span class="custom-control-description">Health/Self-Care</span>
+                </label>
+              </div>
+			  
+			  <div class="form-check">
+                <label class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input">
+                  <span class="custom-control-indicator"></span>
+                  <span class="custom-control-description">Spiritual Growing</span>
+                </label>
+              </div>
+			  
+			    <div class="form-check">
+                <label class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input">
+                  <span class="custom-control-indicator"></span>
+                  <span class="custom-control-description">Personal Development</span>
+                </label>
+              </div>
+			  
+			  <div class="form-check">
+                <label class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input">
+                  <span class="custom-control-indicator"></span>
+                  <span class="custom-control-description">Physical Development</span>
+                </label>
+              </div>
+
+              <hr class="mb-4">
+              <h5 class="mb-4">Payment Info</h5>
+              <div class="form-row">
+                <div class="col-lg-6 form-group">
+                  <label for="cc-num">Card Number:</label>
+                  <input class="form-control" id="cc-num" type="text">
+                </div>
+              
+                <div class="col-lg form-group">
+                  <label for="zip">Zip Code:</label>
+                  <input class="form-control" id="zip" type="text">
+                </div>
+              
+                <div class="col-lg form-group">
+                  <label for="cvv">CVV:</label>
+                  <input class="form-control" id="cvv" type="text">
+                </div>
+              </div>
+
+              <div class="form-row">
+                <label class="col-lg-12">Expiration Date:</label>
+                <div class="form-group col-lg-8">
+                  <select class="custom-select form-control" id="exp-month">
+                    <option value="1">1 - January</option>
+                    <option value="2">2 - February</option>
+                    <option value="3">3 - March</option>
+                    <option value="4">4 - April</option>
+                    <option value="5">5 - May</option>
+                    <option value="6">6 - June</option>
+                    <option value="7">7 - July</option>
+                    <option value="8">8 - August</option>
+                    <option value="9">9 - September</option>
+                    <option value="10">10 - October</option>
+                    <option value="11">11 - November</option> 
+                    <option value="12">12 - December</option>
+                  </select> 
+                </div>
+
+                <div class="form-group col-lg">
+                  <select class="custom-select form-control" id="exp-year">
+                    <option value="2016">2020</option>
+                    <option value="2017">2021</option>
+                    <option value="2018">2022</option>
+                    <option value="2019">2023</option>
+                    <option value="2020">2024</option>
+                  </select>  
+                </div>
+              </div>
+
+              <hr class="mb-4">
+              <button type="submit" class="btn btn-primary btn-lg">Register</button>
+
+            </form><!-- /registration form -->
+          </div>
+
+        </div>
+      </div>
+    </div>	
+
+    <div class="container pt-4">
+      <!-- about -->
+      <div id ="about" class="row">
+        <div class="col-lg order-lg-2">
+          <h3 class="mb-4">About Life Balance Conf</h3>
+          <img class="mb-4 img-fluid rounded d-none d-sm-block" src="/assets/nyc.jpg" alt="NYC">
+          <p>The beautiful city of New York State, New York City will be the host city for Life Balance Conf!</p>
+          <p>Explore the future.</p>
+        </div>
+        <div class="col-lg order-lg-1">
+          <h3 class="mb-4">Expert Speakers</h3>
+          <p>Our expert speaker lineup was just announced, so don't wait too long before grabbing your tickets!</p>
+          <p>Want to meet the international community and share skills with some of the world's top experts? Be the first to know what to expect for the future of Life Balance.</p>
+          <p>Life Balance Conf is committed to being inclusive and welcoming for everyone. We look forward to another intensive day of learning and sharing.</p>
+        </div>
+        <div class="col-lg order-lg-3">
+          <h3 class="mb-4">What You'll Learn</h3>
+          <div class="list-group">
+            <a href="#" class="list-group-item list-group-item-action"><strong>Personal Development</strong>: Life Balance Wheel</a>
+            <a href="#" class="list-group-item list-group-item-action"><strong>Family and Friends</strong>: Communication principles</a>
+            <a href="#" class="list-group-item list-group-item-action"><strong>Physical Development</strong>: Body Exercises</a>
+            <a href="#" class="list-group-item list-group-item-action"><strong>Finances</strong>: Financial managment</a>
+            <a href="#" class="list-group-item list-group-item-action"><strong>Career/Business</strong>: Career oportunities</a>
+            <a href="#" class="list-group-item list-group-item-action"><strong>Health/Self-Care</strong>: Health Food Habits</a>
+          </div>
+        </div>  
+
+      </div>  <!-- /about -->
+      <!-- speakers -->
+      <h1 id="speakers" class="display-4 text-center my-5">Speakers</h1>
+     <!-- [Speakers bios go here] -->
+
+      <div class="row">
+        <div class="col-md-6 col-lg-4">
+          <div class="card mb-3">
+            <img class="card-img-top" src="/assets/vivianne.png" alt="Vivianne">
+            <div class="card-body">
+              <h5 class="card-title">Vivianne</h5>
+              <p class="card-text">Vivianne is a nice person. She likes to help people to improve their relationships!</p>
+            </div>
+          </div>
+        </div>
+      
+        <div class="col-md-6 col-lg-4">
+          <div class="card mb-3">
+            <img class="card-img-top" src="/assets/nodestradamus.png" alt="NodeStradamus">
+            <div class="card-body">
+              <h5 class="card-title">Node</h5>
+              <p class="card-text">Node knows and practicing health life beeing. He is vitamins expert!</p>
+            </div>
+          </div>
+        </div>
+      
+        <div class="col-md-6 col-lg-4">
+          <div class="card mb-3">
+            <img class="card-img-top" src="/assets/robbie.png" alt="Robbie">
+            <div class="card-body">
+              <h4 class="card-title">Robbie</h4>
+              <p class="card-text">Robbie is guru in finances. He likes to share tips about investments and saving.</p>
+            </div>
+          </div>
+        </div>
+      
+        <div class="col-md-6 col-lg-4">
+          <div class="card mb-3">
+            <img class="card-img-top" src="/assets/ecma.png" alt="Ecma">
+            <div class="card-body">
+              <h4 class="card-title">Ecma</h4>
+              <p class="card-text">Ecma is a trainer in the gym. She was a professional sportsman and practice massage.</p>
+            </div>
+          </div>
+        </div>
+      
+        <div class="col-md-6 col-lg-4">
+          <div class="card mb-3">
+            <img class="card-img-top" src="/assets/jay.png" alt="Jay">
+            <div class="card-body">
+              <h4 class="card-title">Jay</h4>
+              <p class="card-text">Jay will share some tricks in Career planing. He was HR more than 10 years.</p>
+            </div>
+          </div>
+        </div>
+      
+        <div class="col-md-6 col-lg-4">
+          <div class="card mb-3">
+            <img class="card-img-top" src="/assets/json.png" alt="Json">
+            <div class="card-body">
+              <h4 class="card-title">Json</h4>
+              <p class="card-text">Json helps people to define the goals and provodi to support to achive them!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- /speakers -->
+
+      <!-- schedule -->
+      <h1 id="schedule" class="display-4 text-center my-5">Schedule</h1>
+     <!-- [Conference schedule goes here] -->
+
+      <ul class="list-group">
+        <li class="list-group-item">
+          <div class="d-flex justify-content-between">
+            <h5 class="mb-1">Health/Self-Care</h5>
+            <span class="badge badge-pill badge-info p-2">9:00am</span>
+          </div>
+          <p class="mb-1">Node</p>
+        </li>
+        <li class="list-group-item">
+          <div class="d-flex justify-content-between">
+            <h5 class="mb-1">Family and Friends</h5>
+            <span class="badge badge-pill badge-info p-2">10:00am</span>
+          </div>
+          <p class="mb-1">Vivianne</p>
+        </li>
+        <li class="list-group-item">
+          <div class="d-flex justify-content-between">
+            <h5 class="mb-1">Career/Business</h5>
+            <span class="badge badge-pill badge-info p-2">11:00am</span>
+          </div>
+          <p class="mb-1">Jay</p>
+        </li>
+        <li class="list-group-item list-group-item-success">
+          <div class="d-flex justify-content-between">
+            <h5 class="mb-1">Lunch</h5>
+            <span class="badge badge-pill badge-info p-2">12:00pm</span>
+          </div>
+          <p class="mb-1">Free fish with vegetables for everyone!</p>
+        </li>
+        <li class="list-group-item">
+          <div class="d-flex justify-content-between">
+            <h5 class="mb-1">Physical Development</h5>
+            <span class="badge badge-pill badge-info p-2">1:00pm</span>
+          </div>
+          <p class="mb-1">Ecma</p>
+        </li> 
+        <li class="list-group-item">
+          <div class="d-flex justify-content-between">
+            <h5 class="mb-1">Finances</h5>
+            <span class="badge badge-pill badge-info p-2">2:00pm</span>
+          </div>
+          <p class="mb-1">Robbie</p>
+        </li> 
+        <li class="list-group-item">
+          <div class="d-flex justify-content-between">
+            <h5 class="mb-1">Personal Development</h5>
+            <span class="badge badge-pill badge-info p-2">3:00pm</span>
+          </div>
+          <p class="mb-1">Json</p>
+        </li>        
+      </ul>
+     <!-- /schedule -->
+
+      <!-- callout button -->
+      <button type="button" class="btn btn-outline-info btn-lg d-block mx-auto my-5" data-toggle="modal" data-target="#register">Don't Miss Out, Register Now</button>
+      <!-- callout button -->
+
+    </div> <!-- /container -->
+	
+<% end %>
+
+<%= render template: "layouts/application" %>	
+	

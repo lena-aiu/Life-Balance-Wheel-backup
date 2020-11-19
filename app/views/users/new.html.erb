@@ -1,0 +1,17 @@
+<% content_for :content do %>
+</br>
+	<div class="container text-center">
+	  <h1 class="display-1 mt-5">Users - Participants</h1>
+	  	  <img class="mb-4 img-fluid rounded mx-auto d-none d-sm-block" src="/assets/Users.png" alt="users">
+	  <p class="lead mb-5">Contact Information of Participants</p>
+	</div>
+
+	<h1>New User</h1>
+
+	<%= render 'form', user: @user %>
+
+	<%= link_to 'Back', users_path %>
+
+<% end %>
+
+<%= render template: "layouts/application" %>

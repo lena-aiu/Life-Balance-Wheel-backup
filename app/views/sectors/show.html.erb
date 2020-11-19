@@ -1,0 +1,26 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @sector.name %>
+</p>
+
+<p>
+  <strong>Trainer:</strong>
+  <%= @sector.trainer %>
+</p>
+
+<p>
+  <strong>Value:</strong>
+  <%= @sector.value %>
+</p>
+
+<p>
+  <strong>User ID:</strong>
+  <%= @sector.user_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_sector_path(@sector) %> |
+<%= link_to 'Back', sectors_path %>
+

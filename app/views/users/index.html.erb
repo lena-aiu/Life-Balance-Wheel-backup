@@ -1,0 +1,42 @@
+<p id="notice"><%= notice %></p>
+
+<% content_for :content do %>
+	<div class="container text-center">
+	  <h1 class="display-1 mt-5">Users - Participants</h1>
+	  	  <img class="mb-4 img-fluid rounded mx-auto d-none d-sm-block" src="/assets/Users.png" alt="users">
+	  <p class="lead mb-5">Contact Information of Participants</p>
+	</div>
+
+<table class="container">
+  <thead>
+    <tr>
+      <th>First name</th>
+      <th>Last name</th>
+      <th>Phone</th>
+      <th>Email</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @users.each do |user| %>
+      <tr>
+        <td><%= user.first_name %></td>
+        <td><%= user.last_name %></td>
+        <td><%= user.phone %></td>
+        <td><%= user.email %></td>
+        <td><%= link_to 'Show', user %></td>
+        <td><%= link_to 'Edit', edit_user_path(user) %></td>
+        <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New User', new_user_path %>
+
+<% end %>
+
+<%= render template: "layouts/application" %>
